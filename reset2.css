@@ -15,7 +15,7 @@ input,select{vertical-align:middle}
 
 body{	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
 		font-weight:400;font-size:160%;/* tidligere 16px */line-height:2em;/* 24px/14 px*/
-		background:#FFF; background-color: red;
+		background:#FFF; background-color: #e3d6c0;
 		color:#bbb;
 		cursor:inherit; ; /* husk å slå AV cursoren*/
 		margin:0px;padding:0px;}
