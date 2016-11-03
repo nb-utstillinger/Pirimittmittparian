@@ -31,8 +31,8 @@ body{	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
 .boks p{padding: 0 20px; text-align: left;}
 .boks img{width: 80%; margin: 10%; margin-bottom: 0}
 .fuller{margin-left: 205px}
-.treff{margin: 10px; width: 329px; height: 390px}
-.fullertreff{margin: 10px; width: 329px; height: 390px; margin-left: 185px}
+.treff{margin: 5px; width: 339px; height: 400px}
+.fullertreff{margin: 5px; width: 339px; height: 400px; margin-left: 202px}
 
 h1{margin-top: 10px; font-size: 1.5em}
 audio{width:100%;float:left;}
