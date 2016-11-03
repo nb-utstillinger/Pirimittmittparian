@@ -15,12 +15,21 @@ input,select{vertical-align:middle}
 
 body{	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
 		font-weight:400;font-size:160%;/* tidligere 16px */line-height:2em;/* 24px/14 px*/
-		background:#FFF;color:#b58c4d;
-		cursor:none;
+		background:#FFF; background-color: red;
+		color:#bbb;
+		cursor:inherit; ; /* husk å slå AV cursoren*/
 		margin:0px;padding:0px;}
 		
 /*	under #dethele/border ligger rammen som viser størrelsen på skjermen - OBS fjern i produksjon	*/		
-#dethele{float:left;margin:14px;width:1247px;height:980px;borxder:0px solid #eee; }
+#dethele{float:left;margin:14px;width:1247px;height:980px;borxder:0px solid #eee; 
+			background-image: url("./pikks/ramme.jpg")
+			}
+
+#sentertext{width: 1047px; margin: 100px 0 0 100px; float: left; background-color: #333}
+
+.boks{width:329px;margin: 10px; float: left; text-align: center; background-color: green}
+.boks img{width: 80%; margin: 10%; margin-bottom: 0}
+
 
 #rammen #toppen footer{width:1217px;margin:15px;}
 #rammen figure{width:225px;margin:0 90px 10px 90px;float: left;font-size:.7em;line-height:1.5em;text-align:center }
