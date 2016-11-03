@@ -1,0 +1,129 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+body{	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
+		font-weight:400;font-size:160%;/* tidligere 16px */line-height:2em;/* 24px/14 px*/
+		background:#FFF;color:#b58c4d;
+		cursor:none;
+		margin:0px;padding:0px;}
+#dethele{float:left;margin:14px;width:1247px;height:980px;borxder:0px solid #eee; }
+
+#rammen #toppen footer{width:1217px;margin:15px;}
+#rammen figure{width:225px;margin:0 90px 10px 90px;float: left;font-size:.7em;line-height:1.5em;text-align:center }
+
+#rammen figure i{font-size: 1.1em}
+
+#toppen{height:700px;margin-top:100px;bxackground-color: red}
+#toppen figure{width:500px;margin:30px;float: left}
+#toppen aside{width:500px;margin:30px;float: right}
+
+#videoside #toppen{height:500px;margin-top: 60px}
+
+footer{height:125px;bxackground-color: green}
+
+#videoside footer{height: 300px; margin-top: 100px; margin-left: 170px; line-height: 1.2em}
+#videoside h1{line-height: 1.4em}
+#lydsiden{line-height:1.4em;}
+
+#flerlydside{font-size:.8em;line-height:.8em}
+#flerlydside #toppen{height: 800px; margin-top: 50px}
+#flerlydside footer{height: 75px}
+
+figure#lyd{width:405px;margin:0;text-align: left}
+div.lydtxt{height: 200px; baxxxckground-color: green}
+
+h1{font-size:1.3em}
+#hh{margin: 20px 0 20px 125px;font-size: 1.45em; height: 40px}
+
+figure img{width:100%;}
+figure.tilbake{float: left; width:75px;text-align: center}
+
+audio{width:100%;height:50px;float:left; margin-left: 100px}
+figure#lyd audio{margin-top: -0px}
+video{width:100%;float:right;mxargin-right: 100px}
+
+audio#partier{margin: 100px 0 0 0}
+
+
+.padd{width:80%;margin-left: 10%; margin-top: 3em}
+.innrykk{margin-left: 10%}
+
+.padd{width:80%;margin-left: 10%}
+.innrykk{margin-left: 4%}
+
+a{text-decoration: none; color: #231F20; color:#b58c4d;cursor:none;}
+
+#button{width:75%;padding:0 0 0 20%;margin-bottom:1em;color:#333;font-size:1.5em;line-height:1.8em}
+#button ul{list-style:none;margin:0;padding:0;border:none}
+#button li{border-bottom:30px solid #FFE5DA;margin:0}
+#button li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #e05b32;border-right:10px solid #ecb396;background-color:#df7b52;color:#fff;text-decoration:none;width:100%} 
+html>body #button li a{width:auto} 
+#button li a:hover{border-left:10px solid #df7b52;border-right:10px solid #e05b32;background-color:#e6936e;color:#fff}
+#button li a.spllr{border-left:10px solid #df7b52;border-right:10px solid #df7b52;background-color:#e05b32;color:#fff}
+
+
+/*
+#topper{width:100%;height:60px;float:left;font-size:2em;text-align:right}
+#topper .padd{margin-right:3.5%}
+#topper .aar{font-size:.4em}
+#midten{width:100%;height:738px;float:left;font-size:1.7em}
+.storbilde{width:390px;margin:30px;float:left; font-size:.65em;}
+.storbilde img{width:100%}
+.textboks{width:760px;height:300px;margin:30px 10px 0 0;float:right}
+.textboks figure{width:30%;float:left}
+#undern{width:100%;height:201px;float:left}
+.klikke{width:230px;height:127px;margin-right:24px;float:left;font-size:.8em;line-height:1.1em;text-align:center}
+.klikke img{width:100%}
+.sisten{margin:0}
+
+.padd{margin:30px}
+.padd2{margin:15px 30px 10px 30px;line-height:1.1em}
+span.liten{font-size:.6em}
+
+
+#button{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.8em;line-height:1.35em}
+#button ul{list-style:none;margin:0;padding:0;border:none}
+#button li{border-bottom:1px solid #e5e1cf;margin:0}
+#button li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
+html>body #button li a{width:auto} 
+#button li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+#button li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+
+
+#button2{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.7em;line-height:1em}
+#button2 ul{list-style:none;margin:0;padding:0;border:none}
+#button2 li{border-bottom:1px solid #e5e1cf;margin:0}
+#button2 li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
+html>body #button2 li a{width:auto} 
+#button2 li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+#button2 li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+
+
+#button3{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.7em;line-height:.8em}
+#button3 ul{list-style:none;margin:0;padding:0;border:none}
+#button3 li{border-bottom:1px solid #e5e1cf;margin:0}
+#button3 li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
+html>body #button3 li a{width:auto} 
+#button3 li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+#button3 li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
+
+.vvv{float:left; width:49%;}
+.hh{float:right; width:49%;}
+*/
+
+.clearfix:after{ content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{ display:inline-block}
+* html .clearfix{ height:1%} /* Hides from IE-mac \*/
+.clearfix{ display:block}
