@@ -16,139 +16,117 @@ input,select{vertical-align:middle}
 /*	---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+--- 	*/
 
 
-body{	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
-		font-weight:400;font-size:100%;/* tidligere 16px */line-height:2em;/* 24px/14 px*/
-		background:#FFF; background-color: #e3d6c0;
-		color:#bbb; color: #9a8760;
-		cursor:inherit; ; /* husk å slå AV cursoren*/
-		margin:0px;padding:0px;}
+/*	------------------------------------------------------------------- 	*/
+/*		Siden dette skal vises på en skjerm/pc som IKKE er i nett,			*/
+/*		har jeg gjort dette så enkelt som mulig.							*/
+/*			5 lydfiler == 5 HTMLsider										*/
+/*						 (pluss en startside uten lydvalg)					*/
+/*		Den aktuelle side har "treff" i boks.class.							*/
+/*		(eller "fullertreff" for "fuller" i venstre-toer-boks				*/
+/*																			*/
+/*													fredm - 161104			*/
+/*	---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+--- 	*/
+body{
+	font-family:'helvetica', 'Verdana', 'Times New Roman', 'Times', serif;
+	font-weight:400;
+	font-size:100%;
+	line-height:2em;
+	background-color: #e3d6c0;
+	color: #9a8760;
+	cursor:inherit;		/* husk å slå AV cursoren i produksjon	*/
+	margin:0px;
+	padding:0px
+}
 		
-/*	under #dethele/border ligger rammen som viser størrelsen på skjermen - OBS fjern i produksjon	*/		
-#dethele{float:left;margin:14px;width:1247px;height:980px;borxder:0px solid #eee; 
-			background-image: url("./pikks/ramme.jpg")
-			}
+#dethele{
+	float:left;
+	margin:14px;
+	width:1247px;
+	height:980px;
+	borxder:0px solid red; /*	fjern denne (border=>borxder) i produksjon	*/
+	background-image: url("./pikks/ramme.jpg")
+}
+#sentertext{
+	width: 1047px;
+	margin: 100px 0 0 100px;
+	float: left
+}
 
-#sentertext{width: 1047px; margin: 100px 0 0 100px; float: left}
+h1{
+	margin-top: 90px;
+	font-size: 1.3em;
+	line-height: 1.2em
+}
+a{
+	color: #9a8760
+}
 
-h1{margin-top: 90px; font-size: 1.3em; line-height: 1.2em}
+.tittel{
+	width: 981px; 
+	height: 80px; 
+	float: left;
+	margin-left: 30px;
+	margin-top: -60px;	
+	-webkit-border-radius: 15px;
+	background: rgba(255, 252, 245, .98);
+	border: 3px solid #9a8760
+}
+.tittel h1{
+	margin:20px;
+	font-size: 2em
+}
+.boks{
+	width:283px;
+	height: 350px;
+	margin: 30px;
+	float: left;
+	text-align: center;
+	background: rgba(255, 252, 245, .98);
+	position:relative;
+	-webkit-border-radius: 15px;
+	box-shadow: 10px 10px 15px #b2a07a;
+	border: 3px solid #9a8760
+}
+.boks p{
+	padding: 10px 20px;
+	font-size: 1.2em;
+	line-height: 1.1em
+}
+.boks img{
+	width: 80%;
+	margin: 10%;
+	margin-bottom: 0
+}
 
-.boks{width:289px; height: 350px; margin: 30px; float: left; text-align: center; 
-	background: rgba(255, 252, 245, .98);position:relative;
-	-moz-border-radius: 15px;-webkit-border-radius: 15px;box-shadow: 10px 10px 15px #b2a07a;}
-.boks p{padding: 20px; font-size: 1.2em; line-height: 1.1em;}
-.boks img{width: 80%; margin: 10%; margin-bottom: 0}
-.fuller{margin-left: 205px}
-.treff{margin: 5px; width: 339px; height: 400px; box-shadow: 30px 30px 35px #d2c5aa;}
-.treff h1{margin-top: 60px}
-.fullertreff{margin: 5px; width: 339px; height: 400px; margin-left: 180px}
-.fullertreff h1{margin-top: 60px}
+.fuller{
+	margin-left: 205px
+}
+.treff{
+	margin: 2px;
+	width: 339px;
+	height: 400px;
+	box-shadow: 20px 20px 35px #b2a07a
+}
+.treff h1{
+	margin-top: 60px
+}
+.fullertreff{
+	margin: 5px;
+	width: 339px;
+	height: 400px;
+	margin-left: 174px
+}
+.fullertreff h1{
+	margin-top: 60px
+}
 
-audio{width:100%;float:left;position: absolute;bottom: 13px;left: 0; display: none;}
-.treff audio, .fullertreff audio{display: inline;}
-
-/* 
-#rammen #toppen footer{width:1217px;margin:15px;}
-#rammen figure{width:225px;margin:0 90px 10px 90px;float: left;font-size:.7em;line-height:1.5em;text-align:center }
-
-#rammen figure i{font-size: 1.1em}
-
-#toppen{height:700px;margin-top:100px;bxackground-color: red}
-#toppen figure{width:500px;margin:30px;float: left}
-#toppen aside{width:500px;margin:30px;float: right}
-
-#videoside #toppen{height:500px;margin-top: 60px}
-
-footer{height:125px;bxackground-color: green}
-
-#videoside footer{height: 300px; margin-top: 100px; margin-left: 170px; line-height: 1.2em}
-#videoside h1{line-height: 1.4em}
-#lydsiden{line-height:1.4em;}
-
-#flerlydside{font-size:.8em;line-height:.8em}
-#flerlydside #toppen{height: 800px; margin-top: 50px}
-#flerlydside footer{height: 75px}
-
-figure#lyd{width:405px;margin:0;text-align: left}
-div.lydtxt{height: 200px; baxxxckground-color: green}
-
-h1{font-size:1.3em}
-#hh{margin: 20px 0 20px 125px;font-size: 1.45em; height: 40px}
-
-figure img{width:100%;}
-figure.tilbake{float: left; width:75px;text-align: center}
-
-
-figure#lyd audio{margin-top: -0px}
-video{width:100%;float:right;mxargin-right: 100px}
-
-audio#partier{margin: 100px 0 0 0}
-
-
-.padd{width:80%;margin-left: 10%; margin-top: 3em}
-.innrykk{margin-left: 10%}
-
-.padd{width:80%;margin-left: 10%}
-.innrykk{margin-left: 4%}
-
-a{text-decoration: none; color: #231F20; color:#b58c4d;cursor:none;}
-
-#button{width:75%;padding:0 0 0 20%;margin-bottom:1em;color:#333;font-size:1.5em;line-height:1.8em}
-#button ul{list-style:none;margin:0;padding:0;border:none}
-#button li{border-bottom:30px solid #FFE5DA;margin:0}
-#button li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #e05b32;border-right:10px solid #ecb396;background-color:#df7b52;color:#fff;text-decoration:none;width:100%} 
-html>body #button li a{width:auto} 
-#button li a:hover{border-left:10px solid #df7b52;border-right:10px solid #e05b32;background-color:#e6936e;color:#fff}
-#button li a.spllr{border-left:10px solid #df7b52;border-right:10px solid #df7b52;background-color:#e05b32;color:#fff}
-*/
-
-/*
-#topper{width:100%;height:60px;float:left;font-size:2em;text-align:right}
-#topper .padd{margin-right:3.5%}
-#topper .aar{font-size:.4em}
-#midten{width:100%;height:738px;float:left;font-size:1.7em}
-.storbilde{width:390px;margin:30px;float:left; font-size:.65em;}
-.storbilde img{width:100%}
-.textboks{width:760px;height:300px;margin:30px 10px 0 0;float:right}
-.textboks figure{width:30%;float:left}
-#undern{width:100%;height:201px;float:left}
-.klikke{width:230px;height:127px;margin-right:24px;float:left;font-size:.8em;line-height:1.1em;text-align:center}
-.klikke img{width:100%}
-.sisten{margin:0}
-
-.padd{margin:30px}
-.padd2{margin:15px 30px 10px 30px;line-height:1.1em}
-span.liten{font-size:.6em}
-
-
-#button{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.8em;line-height:1.35em}
-#button ul{list-style:none;margin:0;padding:0;border:none}
-#button li{border-bottom:1px solid #e5e1cf;margin:0}
-#button li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
-html>body #button li a{width:auto} 
-#button li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-#button li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-
-
-#button2{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.7em;line-height:1em}
-#button2 ul{list-style:none;margin:0;padding:0;border:none}
-#button2 li{border-bottom:1px solid #e5e1cf;margin:0}
-#button2 li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
-html>body #button2 li a{width:auto} 
-#button2 li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-#button2 li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-
-
-#button3{width:96%;padding:0 0 0em 0;margin-bottom:1em;color:#333;font-size:.7em;line-height:.8em}
-#button3 ul{list-style:none;margin:0;padding:0;border:none}
-#button3 li{border-bottom:1px solid #e5e1cf;margin:0}
-#button3 li a{display:block;padding:5px 5px 5px 0.5em;border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#C17056;color:#fff;text-decoration:none;width:100%} 
-html>body #button3 li a{width:auto} 
-#button3 li a:hover{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-#button3 li a.spllr{border-left:10px solid #81432F;border-right:10px solid #E3BEB3;background-color:#CE8F7B;color:#fff}
-
-.vvv{float:left; width:49%;}
-.hh{float:right; width:49%;}
-*/
+audio{
+	width:100%;
+	float:left;
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+}
 
 /*	denne er kjekt å ha når man jobber med FLOAT-elementer	*/
 .clearfix:after{ content:".";display:block;height:0;clear:both;visibility:hidden}
